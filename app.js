@@ -9,9 +9,8 @@ const hostname = '0.0.0.0';
 const port = 3000;
 const source = [
     'https://raw.githubusercontent.com/vokins/yhosts/master/hosts',
-    'https://raw.githubusercontent.com/sy618/hosts/master/p',
-    'https://raw.githubusercontent.com/sy618/hosts/master/y',
-    'https://raw.githubusercontent.com/racaljk/hosts/master/hosts'
+    //'https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts',
+    'https://raw.githubusercontent.com/lennylxx/ipv6-hosts/master/hosts'
     ];
 const server = http.createServer((req, res) => {
     build(source,function(err,data){
