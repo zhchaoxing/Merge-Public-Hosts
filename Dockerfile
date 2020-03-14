@@ -1,10 +1,10 @@
 FROM node:latest
-MAINTAINER malaohu <tua@live.cn>
+MAINTAINER zhchaoxing <zhchaoxing@hotmail.com>
 
 RUN buildDeps='git' \
     && apt-get update \
     && apt-get install -y $buildDeps \
-    && git clone https://github.com/malaohu/Merge-Public-Hosts.git /app \
+    && git clone https://github.com/zhchaoxing/Merge-Public-Hosts.git /app \
     && cd /app \
     && npm install \
     && rm -rf /var/lib/apt/lists/* \
